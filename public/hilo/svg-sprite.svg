@@ -1,0 +1,23 @@
+<svg style="display: none;" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <symbol id="hilo-icon-arrow-up" viewBox="0 0 15 15">
+        <path d="M.97 6.68c.05.12.16.2.29.2h3.42v7.8c0 .18.14.32.31.32h5c.18 0 .32-.14.32-.31V6.88h3.43a.31.31 0 00.22-.54L7.73.1a.31.31 0 00-.44 0L1.04 6.34a.31.31 0 00-.07.34z" />
+    </symbol>
+    <symbol id="hilo-icon-equal" viewBox="0 0 18 12">
+        <line y1="9.75" x2="18" y2="9.75" stroke-width="2.5" />
+        <line y1="1.75" x2="18" y2="1.75" stroke-width="2.5" />
+    </symbol>
+    <symbol id="hilo-icon-arrow-down" viewBox="0 0 15 15">
+        <path d="M14.03 8.32a.31.31 0 00-.29-.2h-3.42V.32A.31.31 0 0010 0H5a.31.31 0 00-.32.31v7.81H1.26a.31.31 0 00-.22.54l6.23 6.25a.31.31 0 00.44 0l6.25-6.25a.31.31 0 00.07-.34z" />
+    </symbol>
+
+
+    <symbol id="hilo-btn-up" viewBox="0 0 162 94">
+        <path d="M.5 34.93a9.5 9.5 0 016.4-8.98L77.42 1.59c2-.69 4.17-.7 6.17 0l71.48 24.38a9.5 9.5 0 016.43 8.99V84a9.5 9.5 0 01-9.5 9.5H10A9.5 9.5 0 01.5 84V34.93z" fill="#161F2C" />
+    </symbol>
+    <symbol id="hilo-btn-down" viewBox="0 0 162 94">
+        <path d="M.5 59.07a9.5 9.5 0 006.4 8.98l70.52 24.36c2 .69 4.17.7 6.17 0l71.48-24.38a9.5 9.5 0 006.43-8.99V10A9.5 9.5 0 00152 .5H10A9.5 9.5 0 00.5 10v49.07z" fill="#161F2C" />
+    </symbol>
+</svg>
+

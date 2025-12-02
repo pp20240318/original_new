@@ -1,0 +1,235 @@
+/* styles.css */
+.custom-tabs .semi-tabs-tab-active {
+  color: #ecf24f; /* 活动标签文字颜色 */
+}
+
+.custom-tabs .semi-tabs-tab {
+  color: white; /* 普通标签文字颜色 */
+}
+
+.custom-tabs .semi-tabs-tab:hover {
+  color: #ecf24f;
+}
+.custom-tabs .semi-tabs-pane {
+  color: white; /* 普通标签文字颜色 */
+}
+
+.bet-btn.disabled input,
+.bet-btn.disabled button {
+  pointer-events: none;
+}
+
+@keyframes animation-expectation-active {
+  0% {
+      transform: scale(0)
+  }
+
+  50% {
+      transform: scale(1.2)
+  }
+
+  to {
+      transform: scale(1)
+  }
+}
+
+@keyframes show-window {
+  0% {
+      opacity: 1
+  }
+
+  50% {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes slotScroll {
+  0% {
+    transform: translateY(-2.88rem);
+  }
+
+  to {
+    -webkit-transform: translateY(-105rem);
+    transform: translateY(-59rem);
+  }
+}
+
+.slot-transform.slot-scroll {
+  -webkit-animation: slotScroll 4s cubic-bezier(0.65, 0.02, 0.65, 1.06);
+  animation: slotScroll 4s cubic-bezier(0.65, 0.02, 0.65, 1.06);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.slot-transform {
+  transform: translateY(-2.73333rem);
+}
+
+.slot-transform.slot-scroll.transform1 {
+  animation-delay: 0.12s;
+}
+
+.slot-transform.slot-scroll.transform2 {
+  animation-delay: 0.24s;
+}
+.slot-transform.slot-scroll.transform3 {
+  animation-delay: 0.36s;
+}
+.slot-transform.slot-scroll.transform4 {
+  animation-delay: 0.48s;
+}
+
+.slot-transform .slot-num {
+  width: 3.6rem;
+  height: 3.6rem;
+  line-height: 3.6rem;
+  background: #e1e1ec;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #768096;
+  font-weight: 700;
+  margin: 0 auto 0.2rem;
+}
+
+.d5-body::before {
+  content: "";
+  display: block;
+  width: 0.4rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 0;
+  background: #008b59;
+  border-radius: 0.3rem 0 0 0.3rem;
+  left: -0.4rem;
+}
+
+.d5-body::after {
+  content: "";
+  display: block;
+  width: 0.4rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 0;
+  background: #008b59;
+  border-radius: 0 0.3rem 0.3rem 0;
+  right: -0.4rem;
+}
+
+.d5-box::before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  z-index: 3;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-right: 2rem solid transparent;
+  border-left: 2rem solid #00b977;
+  border-top: 0.7rem solid transparent;
+  border-bottom: 0.7rem solid transparent;
+}
+
+.d5-box::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  z-index: 3;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid #00b977;
+  border-top: 0.7rem solid transparent;
+  border-bottom: 0.7rem solid transparent;
+}
+
+.slot-transform.transform0 .slot-num {
+  background: #17b15e;
+  color: #fff;
+}
+
+.content_info {
+  background-color: #4c38;
+  margin-right: 5px;
+}
+.content_info_active {
+  background-color: #ecf24f;
+  color: #184b38;
+  margin-right: 5px;
+}
+.custom-collapse {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.custom-collapse-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-collapse-item:last-child {
+  border-bottom: none;
+}
+
+/* 标题样式 */
+.custom-collapse-header {
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* 图标样式 */
+.custom-collapse-icon {
+  transition: transform 0.3s ease;
+}
+
+.custom-collapse-icon.open {
+  transform: rotate(180deg);
+}
+
+/* 内容样式 */
+.custom-collapse-content {
+  padding: 12px 16px;
+  display: none; /* 默认隐藏内容 */
+}
+
+.custom-collapse-content.open {
+  display: block; /* 展开时显示内容 */
+}
+.semi-page-item {
+  color: white;
+}
+.semi-page-item-active {
+  color: #0064fa;
+}
+
+.icon-comm {
+  transition: transform 0.5s ease;
+}
+
+.icon-comm_rotate {
+  transform-origin: center;
+  transform: rotate(360deg);
+}
+
+.icon-comm_close {
+  transform: rotate(0);
+  transform-origin: center;
+}

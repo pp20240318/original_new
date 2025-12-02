@@ -1,0 +1,41 @@
+.ux-modal-enter {
+  animation: ux-modal-bounce-in 0.5s cubic-bezier(.215,.61,.355,1) both;
+}
+
+.ux-modal-leave {
+  animation: ux-modal-bounce-out 0.2s cubic-bezier(.215,.61,.355,1) both;
+}
+
+@keyframes ux-modal-bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.75)
+  }
+  33% {
+    opacity: 1;
+    transform: scale(1.2)
+  }
+  66% {
+    opacity: 1;
+    transform: scale(0.95)
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+@keyframes ux-modal-bounce-out {
+  0% {
+    opacity: 1;
+    transform: scale(1)
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2)
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.75)
+  }
+}

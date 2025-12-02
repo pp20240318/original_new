@@ -1,0 +1,17 @@
+<svg id="eHxRIewkOKz1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 154 47" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <style>
+        <![CDATA[#eHxRIewkOKz4_tr {animation: eHxRIewkOKz4_tr__tr 2000ms linear infinite normal forwards}@keyframes eHxRIewkOKz4_tr__tr { 0% {transform: translate(76.798348px,138.439392px) rotate(24.257036deg)} 62.5% {transform: translate(76.798348px,138.439392px) rotate(0.073603deg)} 100% {transform: translate(76.798348px,138.439392px) rotate(0.073603deg)}} #eHxRIewkOKz4 {animation: eHxRIewkOKz4_c_o 2000ms linear infinite normal forwards}@keyframes eHxRIewkOKz4_c_o { 0% {opacity: 0.35} 62.5% {opacity: 0.35} 100% {opacity: 0}} #eHxRIewkOKz6_tr {animation: eHxRIewkOKz6_tr__tr 2000ms linear infinite normal forwards}@keyframes eHxRIewkOKz6_tr__tr { 0% {transform: translate(76.798348px,138.439392px) rotate(-24.217962deg)} 62.5% {transform: translate(76.798348px,138.439392px) rotate(0.073603deg)} 100% {transform: translate(76.798348px,138.439392px) rotate(0.073603deg)}} #eHxRIewkOKz6 {animation: eHxRIewkOKz6_c_o 2000ms linear infinite normal forwards}@keyframes eHxRIewkOKz6_c_o { 0% {opacity: 0.35} 62.5% {opacity: 0.35} 100% {opacity: 0}}]]>
+    </style>
+    <path d="M-40.1997,138.43938v-.00001c.00001-53.15967,35.45313-98.03882,84.0049-112.28296" opacity="0.5" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" />
+    <path d="M109.80321,26.15871C158.35098,40.40538,193.8003,85.28258,193.8003,138.4394" opacity="0.5" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" />
+    <g id="eHxRIewkOKz4_tr" transform="translate(76.798348,138.439392) rotate(24.257036)">
+        <g id="eHxRIewkOKz4" transform="translate(-76.798347,-138.439392)" opacity="0.35">
+            <path d="M109.80321,26.15871C158.35098,40.40538,193.8003,85.28258,193.8003,138.4394" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" />
+        </g>
+    </g>
+    <g id="eHxRIewkOKz6_tr" transform="translate(76.798348,138.439392) rotate(-24.217962)">
+        <g id="eHxRIewkOKz6" transform="translate(-76.798347,-138.439392)" opacity="0.35">
+            <path d="M-40.1997,138.43938v-.00001c.00001-53.15967,35.45313-98.03882,84.0049-112.28296" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" />
+        </g>
+    </g>
+</svg>

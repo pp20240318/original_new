@@ -1,0 +1,66 @@
+{
+  "siteCode": "GXGWIN",
+  "apiBaseUrl": "https://api.gxgwin.com",
+  "title": "GXGWIN",
+  "description": "GXGWIN",
+  "keywords": "GXGWIN",
+  "domainName": "gxgwin.com",
+  "website": "https://gxgwin.com",
+  "logoUrl": "/gxgwin-logo.png",
+  "faviconUrl": "/gxgwin-icon.png",
+  "language": "en",
+  "email": "XXX@gxgwin.com",
+  "emailTitle": "",
+  "phone": "+63 XXX XXX XXXX",
+  "phoneTitle": "",
+  "socials": [
+    {
+      "name": "facebook",
+      "title": "@GXGWIN",
+      "url": "https://www.facebook.com/"
+    },
+    {
+      "name": "instagram",
+      "title": "@GXGWIN",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "name": "tiktok",
+      "title": "@GXGWIN",
+      "url": "https://www.tiktok.com/"
+    },
+    {
+      "name": "telegram",
+      "title": "@GXGWIN",
+      "url": "https://t.me/gxgwin"
+    }
+  ],
+  "payments": [
+    {
+      "name": "gcash",
+      "title": "Gcash",
+      "url": ""
+    },
+    {
+      "name": "grabpay",
+      "title": "Grabpay",
+      "url": ""
+    },
+    {
+      "name": "maya",
+      "title": "Maya",
+      "url": ""
+    }
+  ],
+  "currency": "PHP",
+  "currencySymbol": "₱",
+  "colorGameType": 1,
+  "showPagcor": true,
+  "liveServerScript": "<!-- Start of LiveChat (www.livechat.com) code --><script>window.__lc = window.__lc || {};window.__lc.license = 18842040;window.__lc.integration_name = \"manual_channels\";window.__lc.product_name = \"livechat\";;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:\"2.0\",on:function(){i([\"on\",c.call(arguments)])},once:function(){i([\"once\",c.call(arguments)])},off:function(){i([\"off\",c.call(arguments)])},get:function(){if(!e._h)throw new Error(\"[LiveChatWidget] You can't use getters before load.\");return i([\"get\",c.call(arguments)])},call:function(){i([\"call\",c.call(arguments)])},init:function(){var n=t.createElement(\"script\");n.async=!0,n.type=\"text/javascript\",n.src=\"https://cdn.livechatinc.com/tracking.js\",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))</script><noscript><a href=\"https://www.livechat.com/chat-with/18842040/\" rel=\"nofollow\">Chat with us</a>, powered by <a href=\"https://www.livechat.com/?welcome\" rel=\"noopener nofollow\" target=\"_blank\">LiveChat</a></noscript><!-- End of LiveChat code --><style>#chat-widget-container{overflow:visible !important;z-index:100 !important;pointer-events:none}#chat-widget{pointer-events:auto}#chat-widget-minimized{transform:translateY(-6rem);pointer-events:auto;display:none !important}</style>",
+  "pixelId": "1664453334093868@10002|450312554279315@10003|2576770342506506@10004|2124318437933093@default",
+  "date_range_gxg": "Date",
+  "common_invitation_code_gxg": "Referral Code",
+  "common_subordinate_search_gxg": "My Agent History",
+  "bonus_code_placeholder_gxg": "Enter bonus code",
+  "googleAnalyticsId": "G-SMG7Y2BTLP"
+}

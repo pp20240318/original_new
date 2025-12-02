@@ -1,0 +1,939 @@
+.button-3d,
+.button-3d:after {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none
+}
+
+.button-3d__text {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+@keyframes loader-86ffcc67 {
+  0% {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
+}
+
+.button-3d {
+  align-items: center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap
+}
+
+.button-3d:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 0
+}
+
+.button-3d__outer {
+  display: block;
+  height: 100%;
+  position: relative;
+  transition: transform .1s ease-in-out;
+  width: 100%;
+  z-index: 1
+}
+
+.button-3d__inner {
+  height: 100%;
+  width: 100%
+}
+
+.button-3d__icon,
+.button-3d__inner {
+  align-items: center;
+  display: flex;
+  justify-content: center
+}
+
+.button-3d__icon {
+  flex-shrink: 0
+}
+
+.button-3d__icon svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+  fill: var(--color_white)
+}
+
+.button-3d__icon img {
+  width: 80%
+}
+
+.button-3d__text {
+  color: var(--color_white);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-weight: 600
+}
+
+.button-3d_center .button-3d__inner {
+  justify-content: center
+}
+
+.button-3d_left .button-3d__inner {
+  justify-content: flex-start
+}
+
+.button-3d_right .button-3d__inner {
+  justify-content: flex-end
+}
+
+.button-3d_loading {
+  pointer-events: none
+}
+
+.button-3d_loading .button-3d__icon,
+.button-3d_loading .button-3d__text {
+  opacity: 0
+}
+
+.button-3d:disabled {
+  opacity: .4;
+  pointer-events: none
+}
+
+.button-3d_fullwidth {
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+.button-3d_red.button-3d:after {
+  background-color: #61001d
+}
+
+.button-3d_red.button-3d .button-3d__outer {
+  background: linear-gradient(1turn, #c4003b .8%, #fb1949);
+  box-shadow: 0 3px 16px rgba(255, 35, 65, .5), inset 0 4px 3px hsla(0, 0%, 100%, .3)
+}
+
+.button-3d_red.button-3d:hover .button-3d__outer {
+  background: linear-gradient(3360deg, #db0a49 .8%, #fb2b57);
+  box-shadow: 0 3px 20px rgba(255, 35, 65, .6), inset 0 4px 4px hsla(0, 0%, 100%, .37)
+}
+
+.button-3d_red.button-3d:active .button-3d__outer {
+  background: linear-gradient(1turn, #c4003b .8%, #fb1949);
+  box-shadow: 0 3px 16px rgba(255, 35, 65, .4), inset 0 3px 3px hsla(0, 0%, 100%, .3)
+}
+
+.button-3d_red .button-3d__spinner span:after {
+  background: #fff
+}
+
+.button-3d_blue.button-3d:after {
+  background-color: #003293
+}
+
+.button-3d_blue.button-3d .button-3d__outer {
+  background: linear-gradient(1turn, #0c5eff .8%, #1398f9);
+  box-shadow: 0 3px 28px rgba(34, 131, 246, .4), inset 0 3px 3px hsla(0, 0%, 100%, .3)
+}
+
+.button-3d_blue.button-3d:hover .button-3d__outer {
+  background: linear-gradient(1turn, #236eff .8%, #34a7fb);
+  box-shadow: 0 3px 20px rgba(34, 131, 246, .6), inset 0 4px 4px hsla(0, 0%, 100%, .37)
+}
+
+.button-3d_blue.button-3d:active .button-3d__outer {
+  background: linear-gradient(1turn, #0c5eff .8%, #1398f9);
+  box-shadow: 0 3px 16px rgba(34, 131, 246, .4), inset 0 3px 3px hsla(0, 0%, 100%, .3)
+}
+
+.button-3d_blue .button-3d__spinner span:after {
+  background: #fff
+}
+
+.button-3d_green.button-3d:after {
+  background-color: #004e11
+}
+
+.button-3d_green.button-3d .button-3d__outer {
+  background: linear-gradient(1turn, #009420 .8%, #1bb83d);
+  box-shadow: 0 2px 24px 0 rgba(27, 184, 61, .4), inset 0 3px 3px 0 hsla(0, 0%, 100%, .3)
+}
+
+.button-3d_green.button-3d:hover .button-3d__outer {
+  background: linear-gradient(1turn, #01a825 .8%, #27ce4b);
+  box-shadow: 0 3px 28px 0 rgba(27, 184, 61, .5), inset 0 4px 4px 0 hsla(0, 0%, 100%, .37)
+}
+
+.button-3d_green.button-3d:active .button-3d__outer {
+  background: linear-gradient(1turn, #009420 .8%, #1bb83d);
+  box-shadow: 0 2px 24px 0 rgba(27, 184, 61, .4), inset 0 3px 3px hsla(0, 0%, 100%, .3)
+}
+
+.button-3d_green .button-3d__spinner span:after {
+  background: #fff
+}
+
+.button-3d_xs.button-3d {
+  font-size: 11px;
+  padding-bottom: 2px
+}
+
+.button-3d_xs.button-3d:after {
+  border-radius: 6px;
+  /* height: 26px */
+}
+
+.button-3d_xs.button-3d .button-3d__outer {
+  border-radius: 6px
+}
+
+.button-3d_xs.button-3d:hover .button-3d__outer {
+  transform: translateY(-2px)
+}
+
+.button-3d_xs.button-3d:active .button-3d__outer {
+  transform: translateY(1px)
+}
+
+.button-3d_xs.button-3d_only-icon .button-3d__outer {
+  padding: 5px
+}
+
+.button-3d_xs:not(.button-3d_only-icon) .button-3d__outer {
+  padding: 5px 14px
+}
+
+.button-3d_xs:not(.button-3d_only-icon) .button-3d__icon:first-child {
+  margin-left: -4px;
+  margin-right: 2px
+}
+
+.button-3d_xs:not(.button-3d_only-icon) .button-3d__icon:last-child {
+  margin-left: 2px;
+  margin-right: -4px
+}
+
+.button-3d_xs .button-3d__icon {
+  height: 16px;
+  width: 16px
+}
+
+.button-3d_xs .button-3d__icon:first-child+.button-3d__text:not(:has(+.button-3d__icon)) {
+  margin-right: 0
+}
+
+.button-3d_xs .button-3d__text {
+  font-size: 11px;
+  letter-spacing: -.22px;
+  line-height: 16px
+}
+
+.button-3d_xs .button-3d__text:first-child:has(+.button-3d__icon) {
+  margin-left: 0
+}
+
+.button-3d_xs .button-3d__text_double {
+  display: flex;
+  flex-direction: column;
+  line-height: 16px
+}
+
+.button-3d_xs .button-3d__text_double span:first-child {
+  font-weight: 600;
+  letter-spacing: -.22px
+}
+
+.button-3d_xs .button-3d__text_double span:last-child {
+  color: hsla(0, 0%, 100%, .7)
+}
+
+.button-3d_xs.button-3d_fullwidth:not(.button-3d_only-icon):not(:has(.button-3d__icon)) .button-3d__outer {
+  padding-left: 8px;
+  padding-right: 8px
+}
+
+.button-3d_xs .button-3d__spinner {
+  display: block;
+  height: 16px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px
+}
+
+.button-3d_xs .button-3d__spinner span {
+  animation: loader-86ffcc67 .8s linear infinite;
+  display: block;
+  transform-origin: 8px 8px
+}
+
+.button-3d_xs .button-3d__spinner span:after {
+  border-radius: 2px;
+  content: " ";
+  display: block;
+  height: 4.5px;
+  left: 50%;
+  position: absolute;
+  top: 1px;
+  transform: translateX(-50%);
+  width: 1.5px
+}
+
+.button-3d_xs .button-3d__spinner span:first-child {
+  animation-delay: -.7s;
+  transform: rotate(45deg)
+}
+
+.button-3d_xs .button-3d__spinner span:nth-child(2) {
+  animation-delay: -.6s;
+  transform: rotate(90deg)
+}
+
+.button-3d_xs .button-3d__spinner span:nth-child(3) {
+  animation-delay: -.5s;
+  transform: rotate(135deg)
+}
+
+.button-3d_xs .button-3d__spinner span:nth-child(4) {
+  animation-delay: -.4s;
+  transform: rotate(180deg)
+}
+
+.button-3d_xs .button-3d__spinner span:nth-child(5) {
+  animation-delay: -.3s;
+  transform: rotate(225deg)
+}
+
+.button-3d_xs .button-3d__spinner span:nth-child(6) {
+  animation-delay: -.2s;
+  transform: rotate(270deg)
+}
+
+.button-3d_xs .button-3d__spinner span:nth-child(7) {
+  animation-delay: -.1s;
+  transform: rotate(315deg)
+}
+
+.button-3d_xs .button-3d__spinner span:nth-child(8) {
+  animation-delay: 0s;
+  transform: rotate(1turn)
+}
+
+.button-3d_sm.button-3d {
+  font-size: 12px;
+  padding-bottom: 3px
+}
+
+.button-3d_sm.button-3d:after {
+  border-radius: 8px;
+  /* height: 33px */
+}
+
+.button-3d_sm.button-3d .button-3d__outer {
+  border-radius: 8px
+}
+
+.button-3d_sm.button-3d:hover .button-3d__outer {
+  transform: translateY(-2px)
+}
+
+.button-3d_sm.button-3d:active .button-3d__outer {
+  transform: translateY(1px)
+}
+
+.button-3d_sm.button-3d_only-icon .button-3d__outer {
+  padding: 6.5px
+}
+
+.button-3d_sm:not(.button-3d_only-icon) .button-3d__outer {
+  padding: 6.5px 24px
+}
+
+.button-3d_sm:not(.button-3d_only-icon) .button-3d__icon:first-child {
+  margin-left: -12px;
+  margin-right: 4px
+}
+
+.button-3d_sm:not(.button-3d_only-icon) .button-3d__icon:last-child {
+  margin-left: 4px;
+  margin-right: -12px
+}
+
+.button-3d_sm .button-3d__icon {
+  height: 20px;
+  width: 20px
+}
+
+.button-3d_sm .button-3d__icon:first-child+.button-3d__text:not(:has(+.button-3d__icon)) {
+  margin-right: -8px
+}
+
+.button-3d_sm .button-3d__text {
+  font-size: 12px;
+  letter-spacing: -.24px;
+  line-height: 20px
+}
+
+.button-3d_sm .button-3d__text:first-child:has(+.button-3d__icon) {
+  margin-left: -8px
+}
+
+.button-3d_sm .button-3d__text_double {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px
+}
+
+.button-3d_sm .button-3d__text_double span:first-child {
+  font-weight: 600;
+  letter-spacing: -.24px
+}
+
+.button-3d_sm .button-3d__text_double span:last-child {
+  color: hsla(0, 0%, 100%, .7)
+}
+
+.button-3d_sm.button-3d_fullwidth:not(.button-3d_only-icon):not(:has(.button-3d__icon)) .button-3d__outer {
+  padding-left: 8px;
+  padding-right: 8px
+}
+
+.button-3d_sm .button-3d__spinner {
+  display: block;
+  height: 20px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px
+}
+
+.button-3d_sm .button-3d__spinner span {
+  animation: loader-86ffcc67 .8s linear infinite;
+  display: block;
+  transform-origin: 10px 10px
+}
+
+.button-3d_sm .button-3d__spinner span:after {
+  border-radius: 2px;
+  content: " ";
+  display: block;
+  height: 5.5px;
+  left: 50%;
+  position: absolute;
+  top: 1px;
+  transform: translateX(-50%);
+  width: 2px
+}
+
+.button-3d_sm .button-3d__spinner span:first-child {
+  animation-delay: -.7s;
+  transform: rotate(45deg)
+}
+
+.button-3d_sm .button-3d__spinner span:nth-child(2) {
+  animation-delay: -.6s;
+  transform: rotate(90deg)
+}
+
+.button-3d_sm .button-3d__spinner span:nth-child(3) {
+  animation-delay: -.5s;
+  transform: rotate(135deg)
+}
+
+.button-3d_sm .button-3d__spinner span:nth-child(4) {
+  animation-delay: -.4s;
+  transform: rotate(180deg)
+}
+
+.button-3d_sm .button-3d__spinner span:nth-child(5) {
+  animation-delay: -.3s;
+  transform: rotate(225deg)
+}
+
+.button-3d_sm .button-3d__spinner span:nth-child(6) {
+  animation-delay: -.2s;
+  transform: rotate(270deg)
+}
+
+.button-3d_sm .button-3d__spinner span:nth-child(7) {
+  animation-delay: -.1s;
+  transform: rotate(315deg)
+}
+
+.button-3d_sm .button-3d__spinner span:nth-child(8) {
+  animation-delay: 0s;
+  transform: rotate(1turn)
+}
+
+.button-3d_md.button-3d {
+  font-size: 14px;
+  padding-bottom: 4px
+}
+
+.button-3d_md.button-3d:after {
+  border-radius: 10px;
+  /* height: 44px */
+}
+
+.button-3d_md.button-3d .button-3d__outer {
+  border-radius: 10px
+}
+
+.button-3d_md.button-3d:hover .button-3d__outer {
+  transform: translateY(-2px)
+}
+
+.button-3d_md.button-3d:active .button-3d__outer {
+  transform: translateY(1px)
+}
+
+.button-3d_md.button-3d_only-icon .button-3d__outer {
+  padding: 10px
+}
+
+.button-3d_md:not(.button-3d_only-icon) .button-3d__outer {
+  padding: 10px 32px
+}
+
+.button-3d_md:not(.button-3d_only-icon) .button-3d__icon:first-child {
+  margin-left: -16px;
+  margin-right: 4px
+}
+
+.button-3d_md:not(.button-3d_only-icon) .button-3d__icon:last-child {
+  margin-left: 4px;
+  margin-right: -16px
+}
+
+.button-3d_md .button-3d__icon {
+  height: 24px;
+  width: 24px
+}
+
+.button-3d_md .button-3d__icon:first-child+.button-3d__text:not(:has(+.button-3d__icon)) {
+  margin-right: -12px
+}
+
+.button-3d_md .button-3d__text {
+  font-size: 14px;
+  letter-spacing: -.28px;
+  line-height: 24px
+}
+
+.button-3d_md .button-3d__text:first-child:has(+.button-3d__icon) {
+  margin-left: -12px
+}
+
+.button-3d_md .button-3d__text_double {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px
+}
+
+.button-3d_md .button-3d__text_double span:first-child {
+  font-weight: 600;
+  letter-spacing: -.28px
+}
+
+.button-3d_md .button-3d__text_double span:last-child {
+  color: hsla(0, 0%, 100%, .7)
+}
+
+.button-3d_md.button-3d_fullwidth:not(.button-3d_only-icon):not(:has(.button-3d__icon)) .button-3d__outer {
+  padding-left: 8px;
+  padding-right: 8px
+}
+
+.button-3d_md .button-3d__spinner {
+  display: block;
+  height: 24px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px
+}
+
+.button-3d_md .button-3d__spinner span {
+  animation: loader-86ffcc67 .8s linear infinite;
+  display: block;
+  transform-origin: 12px 12px
+}
+
+.button-3d_md .button-3d__spinner span:after {
+  border-radius: 2px;
+  content: " ";
+  display: block;
+  height: 6.5px;
+  left: 50%;
+  position: absolute;
+  top: 1px;
+  transform: translateX(-50%);
+  width: 2.5px
+}
+
+.button-3d_md .button-3d__spinner span:first-child {
+  animation-delay: -.7s;
+  transform: rotate(45deg)
+}
+
+.button-3d_md .button-3d__spinner span:nth-child(2) {
+  animation-delay: -.6s;
+  transform: rotate(90deg)
+}
+
+.button-3d_md .button-3d__spinner span:nth-child(3) {
+  animation-delay: -.5s;
+  transform: rotate(135deg)
+}
+
+.button-3d_md .button-3d__spinner span:nth-child(4) {
+  animation-delay: -.4s;
+  transform: rotate(180deg)
+}
+
+.button-3d_md .button-3d__spinner span:nth-child(5) {
+  animation-delay: -.3s;
+  transform: rotate(225deg)
+}
+
+.button-3d_md .button-3d__spinner span:nth-child(6) {
+  animation-delay: -.2s;
+  transform: rotate(270deg)
+}
+
+.button-3d_md .button-3d__spinner span:nth-child(7) {
+  animation-delay: -.1s;
+  transform: rotate(315deg)
+}
+
+.button-3d_md .button-3d__spinner span:nth-child(8) {
+  animation-delay: 0s;
+  transform: rotate(1turn)
+}
+
+.button-3d_lg.button-3d {
+  font-size: 16px;
+  padding-bottom: 4px
+}
+
+.button-3d_lg.button-3d:after {
+  border-radius: 12px;
+  /* height: 52px */
+}
+
+.button-3d_lg.button-3d .button-3d__outer {
+  border-radius: 12px
+}
+
+.button-3d_lg.button-3d:hover .button-3d__outer {
+  transform: translateY(-2px)
+}
+
+.button-3d_lg.button-3d:active .button-3d__outer {
+  transform: translateY(1px)
+}
+
+.button-3d_lg.button-3d_only-icon .button-3d__outer {
+  padding: 14px
+}
+
+.button-3d_lg:not(.button-3d_only-icon) .button-3d__outer {
+  padding: 14px 32px
+}
+
+.button-3d_lg:not(.button-3d_only-icon) .button-3d__icon:first-child {
+  margin-left: -16px;
+  margin-right: 6px
+}
+
+.button-3d_lg:not(.button-3d_only-icon) .button-3d__icon:last-child {
+  margin-left: 6px;
+  margin-right: -16px
+}
+
+.button-3d_lg .button-3d__icon {
+  height: 24px;
+  width: 24px
+}
+
+.button-3d_lg .button-3d__icon:first-child+.button-3d__text:not(:has(+.button-3d__icon)) {
+  margin-right: -12px
+}
+
+.button-3d_lg .button-3d__text {
+  font-size: 16px;
+  letter-spacing: -.32px;
+  line-height: 24px
+}
+
+.button-3d_lg .button-3d__text:first-child:has(+.button-3d__icon) {
+  margin-left: -12px
+}
+
+.button-3d_lg .button-3d__text_double {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px
+}
+
+.button-3d_lg .button-3d__text_double span:first-child {
+  font-weight: 600;
+  letter-spacing: -.32px
+}
+
+.button-3d_lg .button-3d__text_double span:last-child {
+  color: hsla(0, 0%, 100%, .7)
+}
+
+.button-3d_lg.button-3d_fullwidth:not(.button-3d_only-icon):not(:has(.button-3d__icon)) .button-3d__outer {
+  padding-left: 8px;
+  padding-right: 8px
+}
+
+.button-3d_lg .button-3d__spinner {
+  display: block;
+  height: 24px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px
+}
+
+.button-3d_lg .button-3d__spinner span {
+  animation: loader-86ffcc67 .8s linear infinite;
+  display: block;
+  transform-origin: 12px 12px
+}
+
+.button-3d_lg .button-3d__spinner span:after {
+  border-radius: 2px;
+  content: " ";
+  display: block;
+  height: 6.5px;
+  left: 50%;
+  position: absolute;
+  top: 1px;
+  transform: translateX(-50%);
+  width: 2.5px
+}
+
+.button-3d_lg .button-3d__spinner span:first-child {
+  animation-delay: -.7s;
+  transform: rotate(45deg)
+}
+
+.button-3d_lg .button-3d__spinner span:nth-child(2) {
+  animation-delay: -.6s;
+  transform: rotate(90deg)
+}
+
+.button-3d_lg .button-3d__spinner span:nth-child(3) {
+  animation-delay: -.5s;
+  transform: rotate(135deg)
+}
+
+.button-3d_lg .button-3d__spinner span:nth-child(4) {
+  animation-delay: -.4s;
+  transform: rotate(180deg)
+}
+
+.button-3d_lg .button-3d__spinner span:nth-child(5) {
+  animation-delay: -.3s;
+  transform: rotate(225deg)
+}
+
+.button-3d_lg .button-3d__spinner span:nth-child(6) {
+  animation-delay: -.2s;
+  transform: rotate(270deg)
+}
+
+.button-3d_lg .button-3d__spinner span:nth-child(7) {
+  animation-delay: -.1s;
+  transform: rotate(315deg)
+}
+
+.button-3d_lg .button-3d__spinner span:nth-child(8) {
+  animation-delay: 0s;
+  transform: rotate(1turn)
+}
+
+.button-3d_double-line.button-3d {
+  padding-bottom: 3px
+}
+
+.button-3d_double-line.button-3d:after {
+  border-radius: 8px;
+  height: 30px
+}
+
+.button-3d_double-line.button-3d .button-3d__outer {
+  border-radius: 8px
+}
+
+.button-3d_double-line.button-3d:hover .button-3d__outer {
+  transform: translateY(-2px)
+}
+
+.button-3d_double-line.button-3d:active .button-3d__outer {
+  transform: translateY(1px)
+}
+
+.button-3d_double-line.button-3d_only-icon .button-3d__outer {
+  padding: 6.5px
+}
+
+.button-3d_double-line:not(.button-3d_only-icon) .button-3d__outer {
+  padding: 6.5px 17px
+}
+
+.button-3d_double-line:not(.button-3d_only-icon) .button-3d__icon:first-child {
+  margin-left: -12px;
+  margin-right: 4px
+}
+
+.button-3d_double-line:not(.button-3d_only-icon) .button-3d__icon:last-child {
+  margin-left: 4px;
+  margin-right: -12px
+}
+
+.button-3d_double-line .button-3d__icon {
+  height: 17px;
+  width: 17px
+}
+
+.button-3d_double-line .button-3d__icon:first-child+.button-3d__text:not(:has(+.button-3d__icon)) {
+  margin-right: -8px
+}
+
+.button-3d_double-line .button-3d__text {
+  letter-spacing: -.28px;
+  line-height: 17px
+}
+
+.button-3d_double-line .button-3d__text:first-child:has(+.button-3d__icon) {
+  margin-left: -8px
+}
+
+.button-3d_double-line .button-3d__text_double {
+  display: flex;
+  flex-direction: column;
+  line-height: 17px
+}
+
+.button-3d_double-line .button-3d__text_double span:first-child {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -.28px
+}
+
+.button-3d_double-line .button-3d__text_double span:last-child {
+  color: hsla(0, 0%, 100%, .7);
+  font-size: 12px
+}
+
+.button-3d_double-line.button-3d_fullwidth:not(.button-3d_only-icon):not(:has(.button-3d__icon)) .button-3d__outer {
+  padding-left: 8px;
+  padding-right: 8px
+}
+
+.button-3d_double-line .button-3d__spinner {
+  display: block;
+  height: 24px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px
+}
+
+.button-3d_double-line .button-3d__spinner span {
+  animation: loader-86ffcc67 .8s linear infinite;
+  display: block;
+  transform-origin: 12px 12px
+}
+
+.button-3d_double-line .button-3d__spinner span:after {
+  border-radius: 2px;
+  content: " ";
+  display: block;
+  height: 6.5px;
+  left: 50%;
+  position: absolute;
+  top: 1px;
+  transform: translateX(-50%);
+  width: 2.5px
+}
+
+.button-3d_double-line .button-3d__spinner span:first-child {
+  animation-delay: -.7s;
+  transform: rotate(45deg)
+}
+
+.button-3d_double-line .button-3d__spinner span:nth-child(2) {
+  animation-delay: -.6s;
+  transform: rotate(90deg)
+}
+
+.button-3d_double-line .button-3d__spinner span:nth-child(3) {
+  animation-delay: -.5s;
+  transform: rotate(135deg)
+}
+
+.button-3d_double-line .button-3d__spinner span:nth-child(4) {
+  animation-delay: -.4s;
+  transform: rotate(180deg)
+}
+
+.button-3d_double-line .button-3d__spinner span:nth-child(5) {
+  animation-delay: -.3s;
+  transform: rotate(225deg)
+}
+
+.button-3d_double-line .button-3d__spinner span:nth-child(6) {
+  animation-delay: -.2s;
+  transform: rotate(270deg)
+}
+
+.button-3d_double-line .button-3d__spinner span:nth-child(7) {
+  animation-delay: -.1s;
+  transform: rotate(315deg)
+}
+
+.button-3d_double-line .button-3d__spinner span:nth-child(8) {
+  animation-delay: 0s;
+  transform: rotate(1turn)
+}
+
+.button-flat {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none
+}
+
+.button-flat__text {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
